@@ -9,7 +9,6 @@ services:
       - ${DOCKER_APP_DATA}/whats-app-bot/data:/mnt/auth-data
     environment:
       SELF_CONTACT_ID: ${WHATSAPP_SELF_CONTACT_ID}
-      REACTION_EMOJI: 🙏
       OPEN_AI_API_KEY: ${OPEN_AI_KEY}
       OPEN_AI_MODEL_KEY: 'gpt-4-1106-preview'
-      OPEN_AI_SYSTEM_PROMPT: 'You are an assistant which replies to instant messenger messages'
+      OPEN_AI_SYSTEM_PROMPT: 'You are an assistant who expands an emoji reponse to a message into a full text response'

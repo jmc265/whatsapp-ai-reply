@@ -44,7 +44,7 @@ whatsAppClient.on('message_reaction', async (whatsAppReaction) => {
     if (whatsAppReaction.senderId !== process.env.SELF_CONTACT_ID) {
         return;
     }
-    if (whatsAppReaction.reaction !== process.env.REACTION_EMOJI) {
+    if (!whatsAppReaction.reaction || whatsAppReaction.reaction === '') {
         return;
     }
     const whatsAppMessage = await whatsAppClient.getMessageById(whatsAppReaction.msgId._serialized);
@@ -58,7 +58,8 @@ whatsAppClient.on('message_reaction', async (whatsAppReaction) => {
         const chatCompletion = await openai.chat.completions.create({
             messages: [
                 { role: 'system', content: openAiSystemPrompt },
-                { role: 'user', content: whatsAppMessage.body }
+                { role: 'user', content: whatsAppMessage.body },
+                { role: 'user', content: whatsAppReaction.reaction }
             ],
             model: openAiModelKey,
         });
