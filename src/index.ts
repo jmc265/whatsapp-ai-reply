@@ -38,6 +38,7 @@ whatsAppClient.on('qr', qr => {
 
 whatsAppClient.on('ready', () => {
     console.log('WhatsApp AI Reply is ready');
+    console.log('WhatsApp Self ID: ', whatsAppClient.info.wid._serialized)
 });
 
 whatsAppClient.on('message_reaction', async (whatsAppReaction) => {

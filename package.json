@@ -1,14 +1,14 @@
 {
   "name": "whatsapp-ai-reply",
   "version": "0.0.1",
-  "description": "WhatsApp bot that uses AI to help with replies",
-  "main": "index.js",
+  "description": "WhatsApp bot that uses AI to generate replies",
+  "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node build/index.js"
   },
   "author": "James Cross",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@types/node": "^20.10.5",
     "@types/qrcode-terminal": "^0.12.2",

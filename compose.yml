@@ -11,4 +11,4 @@ services:
       SELF_CONTACT_ID: ${WHATSAPP_SELF_CONTACT_ID}
       OPEN_AI_API_KEY: ${OPEN_AI_KEY}
       OPEN_AI_MODEL_KEY: 'gpt-4-1106-preview'
-      OPEN_AI_SYSTEM_PROMPT: 'You are an assistant who expands an emoji reponse to a message into a full text response'
+      OPEN_AI_SYSTEM_PROMPT: 'You are an assistant who expands an emoji response to a message into a full text response'
