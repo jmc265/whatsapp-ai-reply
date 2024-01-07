@@ -4,6 +4,8 @@ Use [WhatsApp client library](https://wwebjs.dev/) and [OpenAI client library](h
 
 >⚠️ Use at your own risk. The WhatsApp client library is unofficial and could get your blocked from the network.
 
+![Whats App Reply Demo](https://github.com/jmc265/whatsapp-ai-reply/assets/20837111/0b7432ba-0909-44e4-a398-4fa5887449da)
+
 ## Usage
 
 ### Docker
