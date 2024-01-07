@@ -6,10 +6,6 @@ Use [WhatsApp client library](https://wwebjs.dev/) and [OpenAI client library](h
 
 ![Whats App Reply Demo](https://github.com/jmc265/whatsapp-ai-reply/assets/20837111/0b7432ba-0909-44e4-a398-4fa5887449da)
 
-<video autoplay="true" muted="true">
-  <source src="https://jeeb.uk/assets/whats-app-ai-reply/WhatsAppAIReply.mp4" type="video/mp4">
-</video>
-
 ## Usage
 
 ### Docker
